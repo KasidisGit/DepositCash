@@ -10,6 +10,7 @@ public class Agent {
     protected int minAge =15;
     protected int maxAge =20;
     protected int fare =0;
+    protected int minDeposit=200;
     private int[] bankAccountIds={11111,22222};
     public double amountDepositedCash;
 
@@ -40,5 +41,9 @@ public class Agent {
             }
         }
         return false;
+    }
+
+    public boolean checkMinimumDeposit(double cash){
+        return cash>=minDeposit;
     }
 }

@@ -16,7 +16,7 @@ If you don't have maven, Download link here: https://maven.apache.org/download.c
 ```
 [INFO] Results:
 [INFO] 
-[INFO] Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+[INFO] Tests run: 16, Failures: 0, Errors: 0, Skipped: 0
 [INFO] 
 [INFO] ------------------------------------------------------------------------
 [INFO] BUILD SUCCESS
