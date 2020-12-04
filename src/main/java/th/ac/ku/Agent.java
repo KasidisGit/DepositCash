@@ -1,5 +1,6 @@
 package th.ac.ku;
 
+import java.time.LocalTime;
 import java.util.Map;
 import java.util.TreeMap;
 
@@ -12,11 +13,19 @@ public class Agent {
     protected int fare =0;
     protected int minDeposit=200;
     private int[] bankAccountIds={11111,22222};
+    protected double openTime = 5.00;
+    protected double closedTime = 0.00;
     public double amountDepositedCash;
 
     Map<Boolean,Integer> response = new TreeMap<>();
+    Time time;
 
-
+    public Agent(){
+        time = new MyTime();
+    }
+    public Agent(Time time){
+        this.time = time;
+    }
     public boolean checkOneTimeDeposit(double cash) {
         return cash <= allowPerTimeDepositCash;
     }
@@ -45,5 +54,11 @@ public class Agent {
 
     public boolean checkMinimumDeposit(double cash){
         return cash>=minDeposit;
+    }
+
+    public boolean checkDepositTime() {
+        LocalTime currentTime = time.now();
+        int totalMinute = currentTime.getMinute() + currentTime.getHour()*60;
+        return totalMinute > openTime && closedTime < totalMinute;
     }
 }

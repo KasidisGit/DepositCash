@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="th.ac.ku.DepositCashTest" time="0.087" tests="16" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="th.ac.ku.DepositCashTest" time="0.001" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="15"/>
     <property name="sun.jnu.encoding" value="UTF-8"/>
@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="TH"/>
     <property name="sun.boot.library.path" value="/usr/local/Cellar/openjdk/15.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/pong/depositCash/target/surefire/surefirebooter14407730760917453634.jar /Users/pong/depositCash/target/surefire 2020-11-30T09-48-35_078-jvmRun1 surefire14023559103348329582tmp surefire_06152334467279442228tmp"/>
+    <property name="sun.java.command" value="/Users/pong/depositCash/target/surefire/surefirebooter2915271976548327537.jar /Users/pong/depositCash/target/surefire 2020-12-04T10-59-21_611-jvmRun1 surefire9020551886885280815tmp surefire_06977988860762421242tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/pong/depositCash/target/test-classes:/Users/pong/depositCash/target/classes:/Users/pong/.m2/repository/org/junit/jupiter/junit-jupiter/5.7.0/junit-jupiter-5.7.0.jar:/Users/pong/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.7.0/junit-jupiter-api-5.7.0.jar:/Users/pong/.m2/repository/org/apiguardian/apiguardian-api/1.1.0/apiguardian-api-1.1.0.jar:/Users/pong/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/pong/.m2/repository/org/junit/platform/junit-platform-commons/1.7.0/junit-platform-commons-1.7.0.jar:/Users/pong/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.7.0/junit-jupiter-params-5.7.0.jar:/Users/pong/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.7.0/junit-jupiter-engine-5.7.0.jar:/Users/pong/.m2/repository/org/junit/platform/junit-platform-engine/1.7.0/junit-platform-engine-1.7.0.jar:"/>
@@ -28,7 +28,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
-    <property name="surefire.real.class.path" value="/Users/pong/depositCash/target/surefire/surefirebooter14407730760917453634.jar"/>
+    <property name="surefire.real.class.path" value="/Users/pong/depositCash/target/surefire/surefirebooter2915271976548327537.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="15.0.1+9"/>
@@ -53,20 +53,7 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="59.0"/>
   </properties>
-  <testcase name="age_More_Than_20_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.039"/>
-  <testcase name="daily_Deposit_More_Than_50000_Result_Should_Be_False" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="age_Less_Than_15_Result_Should_Be_False" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="minimum_Deposit_Equal_To_200_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.004"/>
-  <testcase name="deposit_equal_to_30000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="deposit_Less_Than_30000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="daily_Deposit_Equal_to_50000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="minimum_Deposit_Less_Than_200_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="age_Equal_To_15_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="age_More_Than_15_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="minimum_Deposit_More_Than_200_Result_Should_Be_False" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="valid_Account_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="invalid_Account_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0"/>
-  <testcase name="daily_Deposit_Less_Than_50000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0"/>
-  <testcase name="deposit_more_than_30000_Result_Should_Be_False" classname="th.ac.ku.DepositCashTest" time="0.001"/>
-  <testcase name="age_Equal_To_20_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0.001"/>
+  <testcase name="deposit_equal_to_30000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0"/>
+  <testcase name="deposit_Less_Than_30000_Result_Should_Be_True" classname="th.ac.ku.DepositCashTest" time="0"/>
+  <testcase name="deposit_more_than_30000_Result_Should_Be_False" classname="th.ac.ku.DepositCashTest" time="0"/>
 </testsuite>
